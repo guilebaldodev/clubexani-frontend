@@ -38,7 +38,7 @@ const QuestionTable = () => {
 
 
     useEffect(()=>{
-        console.log(questions)
+        console.log(questions,"??")
     },[questions])
 
 
