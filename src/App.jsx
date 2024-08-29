@@ -8,6 +8,8 @@ import { Route, Routes } from 'react-router-dom'
 import SideBar from './components/AdminSideBar'
 import { QuestionProvider } from './context/QuestionConext'
 import QuestionTable from './components/QuestionTable'
+import LandingPage from './pages/LandingPage'
+import LessonPage from './pages/LessonPage'
 
 function App() {
 
@@ -17,6 +19,10 @@ function App() {
 
       <Routes>
 
+      {/* <Route path='/' element={<LandingPage></LandingPage>}> */}
+
+      <Route path='/'element={<LandingPage></LandingPage>}></Route>
+      <Route path='/exani-iii/lecciones' element={<LessonPage></LessonPage>}></Route>
       <Route path='/panel-control' element={<SideBar></SideBar>}>
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
       <Route path='preguntas' element={<QuestionTable></QuestionTable>}></Route>

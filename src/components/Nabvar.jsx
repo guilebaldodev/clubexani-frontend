@@ -1,15 +1,36 @@
-import Form from "./Form";
+import {Link} from 'react-router-dom'
 
 const Navbar = () => {
     return ( 
         <>
-        <div className="nav">
+        <header className="header">
 
             <div className="logotype">
-                <img src="./logo.png" alt="" />
+                <img src="./logo2.png" alt="" />
+                <h2>
+                    <span className='primary-color'>
+                    Club 
+
+                    </span>
+                    Exani
+                    </h2>
             </div>
 
-        </div>
+            <nav className="navbar">
+                <Link className='primary-color'>Inicio</Link>
+                <Link>Planes</Link>
+                <Link>Testimonios</Link>
+                <Link>Nosotros</Link>
+                <Link>Contacto</Link>
+            </nav>
+
+            <div className="navbar-button">
+                    <button>Iniciar sesion</button>
+            </div>
+
+            
+
+        </header>
 
 
 
