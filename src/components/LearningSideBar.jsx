@@ -1,18 +1,20 @@
+import { Link } from "react-router-dom";
+
 const LearningSideBar = () => {
     return ( 
     <>
     <div className="learning-side-container">
         <h3>Temario de Metodologia</h3>
-        <div className="learning-side-item item-side-selected">
+        <Link to={"/lecciones/paradigmas-de-investigacion"} className="learning-side-item item-side-selected">
             <p>Paradigmas de investigacion</p>
             <img src="/icons/done-blue-icon3.png" alt="" />
-        </div>
+        </Link>
 
-        <div className="learning-side-item ">
+        <Link to={"/lecciones/niveles-de-medicion"} className="learning-side-item ">
             <p>Niveles de medicion</p>
             <img src="/icons/done-blue-icon3.png" alt="" />
         
-        </div>
+        </Link>
         <div className="learning-side-item ">
             <p>Enfoques de una investigacion</p>
             <img src="/icons/done-blue-icon3.png" alt="" />

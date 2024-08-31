@@ -25,7 +25,7 @@ const UserHeader = () => {
     <Link>
     <img src="/icons/header/writing.svg" alt="" />
     Simuladores</Link>
-    <Link>
+    <Link to={"/exani-iii/lecciones"}>
     <img src="/icons/header/open-book.png" alt="" />
     Lecciones</Link>
     <Link>
@@ -37,9 +37,9 @@ const UserHeader = () => {
     Planes</Link>
 </nav>
 
-<div className="navbar-button user-header-button">
+<Link to={"/exani-iii/perfil"} className="navbar-button user-header-button">
         <img src="/icons/header/user-icon.png" alt="" />
-</div>
+</Link>
 
 </div>
 

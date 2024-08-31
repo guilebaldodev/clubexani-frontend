@@ -734,6 +734,7 @@ input[type="checkbox"]{
   top: 60px;
   /* overflow:scroll; */
   overflow-x: hidden;
+  margin-top: 64px;
 }
 
 .learning-side-container h3{
@@ -749,6 +750,9 @@ input[type="checkbox"]{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-decoration: none;
+  color: #25265e;
+
 }
 
 .learning-side-item p{
@@ -765,6 +769,7 @@ input[type="checkbox"]{
 .item-side-selected{
   box-shadow: inset 4.5px 0 #1865f2;
   background-color: #d4ebff;
+
 }
 
 .learning-side-item img{
@@ -970,7 +975,8 @@ ol li{
   padding-top: 0.5rem;
 }
 
-.pt-16{
+.pt-0{
+  padding-top: 0;
 }
 
 .example{
@@ -981,6 +987,11 @@ ol li{
   display: flex;
   justify-content: space-between;
   padding: 4rem  0;
+}
+
+.example .lesson-ul{
+  padding-left: 2rem;
+  padding-top: 0.5rem;
 }
 
 .lesson-buttons-container button{
@@ -1049,3 +1060,35 @@ ol li{
 
 
 
+/* table lesson */
+
+.lesson-table{
+  border-color: #d5d5e7;
+  border-collapse: collapse;
+}
+
+.lesson-table thead, tr, th, tbody, td {
+  border-style: solid;
+  border-color: inherit;
+  border-width: 1px;
+}
+
+.lesson-table thead{
+  text-align: left;
+}
+
+.lesson-table thead th{
+  color: #333;
+    opacity: 0.9;
+    padding: 9px 15px 9px 15px;
+}
+
+.lesson-table tbody tr td {
+  padding: 0.8rem;
+  font-size: 15px;
+  color: #333;
+}
+
+.grey-tr{
+  background-color: rgb(246, 247, 249) !important;
+}
