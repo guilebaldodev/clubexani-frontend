@@ -24,7 +24,7 @@ const LessonPage = () => {
     <>
       <UserHeader></UserHeader>
       <div className="lesson-content-container">
-        <LearningSideBar></LearningSideBar>
+        <LearningSideBar lessonName={nombre}></LearningSideBar>
         <div className="lesson-container">
             <LessonComponent></LessonComponent>
         </div>

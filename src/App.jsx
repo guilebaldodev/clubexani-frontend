@@ -8,6 +8,8 @@ import LandingPage from './pages/LandingPage'
 import LessonPage from './pages/LessonPage'
 import ProfilePage from './pages/Profile'
 import PasswordPage from './pages/PasswordPage'
+import PricingPage from './pages/PricingPage'
+import QuizzesPage from './pages/QuizPage'
 
 function App() {
 
@@ -17,12 +19,16 @@ function App() {
 
       <Routes>
 
-      {/* <Route path='/' element={<LandingPage></LandingPage>}> */}
-
       <Route path='/'element={<LandingPage></LandingPage>}></Route>
       <Route path='/lecciones/:nombre' element={<LessonPage></LessonPage>}></Route>
+      <Route path='/cuestionarios/:tema' element={<QuizzesPage></QuizzesPage>}></Route>
+      
+
       <Route path='/perfil' element={<ProfilePage></ProfilePage>}></Route>
+      <Route path='/planes' element={<PricingPage></PricingPage>}></Route>
       <Route path='/contraseña' element={<PasswordPage></PasswordPage>}></Route>
+      
+
       <Route path='/panel-control' element={<SideBar></SideBar>}>
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
       <Route path='preguntas' element={<QuestionTable></QuestionTable>}></Route>

@@ -1,4 +1,4 @@
-const MedicionLeccion = () => {
+const MedicionLeccion = ({nombre}) => {
   return (
     <>
       <div className="lesson-content">

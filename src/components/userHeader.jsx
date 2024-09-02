@@ -25,19 +25,19 @@ const UserHeader = () => {
     <Link>
     <img src="/icons/header/writing.svg" alt="" />
     Simuladores</Link>
-    <Link to={"/exani-iii/lecciones"}>
+    <Link to={"/lecciones/paradigmas-de-investigacion"}>
     <img src="/icons/header/open-book.png" alt="" />
     Lecciones</Link>
-    <Link>
+    <Link to={'/cuestionarios/metodologia-de-la-investigacion'}>
     <img src="/icons/header/test-icon.png" alt="" />
     Cuestionarios
     </Link>
-    <Link>
+    <Link to={'/planes'}>
     <img src="/icons/header/payment-icon.png" alt="" />
     Planes</Link>
 </nav>
 
-<Link to={"/exani-iii/perfil"} className="navbar-button user-header-button">
+<Link to={"/perfil"} className="navbar-button user-header-button">
         <img src="/icons/header/user-icon.png" alt="" />
 </Link>
 
