@@ -28,8 +28,8 @@ const quizzesData = {
   },
   'comprension-lectora': {
     title: "Comprensión de Lectura",
-    image: "/icons/comprehension-icon.png",
-    color:"",
+    image: "/icons/quizzes/books-icon.png",
+    color:"#F3B942",
     quizzes: [
       { title: "Tipos de Textos", status: "Completado" },
       { title: "Estrategias de Lectura", status: "Por completar" },
@@ -38,8 +38,8 @@ const quizzesData = {
   },
   'redaccion-indirecta': {
     title: "Redacción Indirecta",
-    image: "/icons/writing-icon.png",
-    color:"",
+    image: "/icons/quizzes/writing-icon.png",
+    color:"#1ABC9C",
     quizzes: [
       { title: "Estructura del Texto", status: "Completado" },
       { title: "Técnicas de Redacción", status: "Completado" },
@@ -48,8 +48,8 @@ const quizzesData = {
   },
   'pensamiento-matematico': {
     title: "Pensamiento Matemático",
-    image: "/icons/math-icon.png",
-    color:"",
+    image: "/icons/quizzes/mathematics-icon.png",
+    color:"#EE4266",
     quizzes: [
       { title: "Álgebra Básica", status: "Completado" },
       { title: "Geometría", status: "Por completar" },
@@ -81,14 +81,14 @@ const QuizzesPage = () => {
           <Link to="/cuestionarios/metodologia-de-la-investigacion" className={tema === 'metodologia-de-la-investigacion' ? 'quizzes-nav-selected' : ''}>
               Metodología
             </Link>
-            <Link to="/cuestionarios/comprension-lectora" className={tema === 'comprension-lectora' ? 'quizzes-nav-selected' : ''}>
-              Comprensión
+            <Link to="/cuestionarios/pensamiento-matematico" className={tema === 'pensamiento-matematico' ? 'quizzes-nav-selected' : ''}>
+              Pensamiento Matemático
             </Link>
             <Link to="/cuestionarios/redaccion-indirecta" className={tema === 'redaccion-indirecta' ? 'quizzes-nav-selected' : ''}>
               Redacción Indirecta
             </Link>
-            <Link to="/cuestionarios/pensamiento-matematico" className={tema === 'pensamiento-matematico' ? 'quizzes-nav-selected' : ''}>
-              Pensamiento Matemático
+            <Link to="/cuestionarios/comprension-lectora" className={tema === 'comprension-lectora' ? 'quizzes-nav-selected' : ''}>
+              Comprensión lectora
             </Link>
           </div>
           <div className="quizzes-page-titles">
@@ -96,7 +96,7 @@ const QuizzesPage = () => {
               <img src={subject['image']} alt="" />
             </div>
             <img src="" alt="" />
-            <h2>Metodologia de la investigacion</h2>
+            <h2>{subject['title']}</h2>
           </div>
 
           <div className="quizzes-container">
@@ -136,9 +136,8 @@ const QuizzesPage = () => {
              <p>Por completar</p>
              </div>
              </div>
-           
              <div className="quiz-item-button ">
-                   <div className="circle-div">
+                   <div className="circle-div" style={{backgroundColor:subject['color']}}>
                        <img src="/icons/quizzes/play-icon.png" alt="" />
                    </div>
              </div>

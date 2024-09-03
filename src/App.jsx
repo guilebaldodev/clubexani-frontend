@@ -10,6 +10,7 @@ import ProfilePage from './pages/Profile'
 import PasswordPage from './pages/PasswordPage'
 import PricingPage from './pages/PricingPage'
 import QuizzesPage from './pages/QuizPage'
+import UserDashboard from './pages/UserDashboard'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <Routes>
 
       <Route path='/'element={<LandingPage></LandingPage>}></Route>
+      <Route path='/exani-iii/'element={<UserDashboard></UserDashboard>}></Route>
       <Route path='/lecciones/:nombre' element={<LessonPage></LessonPage>}></Route>
       <Route path='/cuestionarios/:tema' element={<QuizzesPage></QuizzesPage>}></Route>
       

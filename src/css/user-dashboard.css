@@ -1,0 +1,165 @@
+.user-dashboard-container{
+    margin-top: 64px;
+    font-family: 'CircularStd-Book',sans-serif;
+
+}
+
+
+.dashboard-titles{
+    width: 70%;
+    margin: auto;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+.dashboard-titles h2{
+    font-size: 27px;
+}
+
+.dashboard-titles p{
+    font-size: 18px;
+    padding-top:1rem ;
+}
+
+
+.user-dashboard-info{
+    width: 90%;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.user-dashboards-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    cursor: pointer;
+
+}
+
+.user-dashboard-info h3{
+    color: rgb(71, 71, 71);
+    font-size: 23px;
+    font-family: 'CircularStd-Book',sans-serif;
+    padding-bottom: 1rem;
+}
+
+
+.user-dashboard-card{
+    font-family: "Quicksand", sans-serif;
+    border-radius: 14px;
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+    position: relative;
+    color: #1D2531;
+    display: flex;
+    /* border: 0.5px solid #cecece; */
+    padding: 1rem;
+    justify-content: space-between;
+    gap: 4px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.dashboard-card-container{
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+
+
+.dashboard-card-text{
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dashboard-card-text .title-card{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(71, 71, 71);
+    font-size: 18px;
+    font-family: 'CircularStd-Book',sans-serif;
+    padding-bottom: 1rem;
+}
+
+.dashboard-card-text .subtitle{
+    color: #EE4266;
+    font-family: 'CircularStd-Book',sans-serif;
+    font-size: 22px;
+}
+
+.dashboard-img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-img{
+    width: 55px;
+    height: 55px;
+    background-color: #EE4266;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-img img{
+    width: 44px;
+    height: 44px;
+}
+
+
+/* diagnostic card */
+
+.diagnostic-exam-card{
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    padding: 1rem;
+    border-radius: 14px;
+
+}
+
+.diagnostic-titles{
+    display: flex;
+    align-items: center;
+}
+
+.diagnostic-img{
+    width: 50px;
+    height: 50px;
+    background-color: #EE4266;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+
+.diagnostic-titles p{
+    font-size: 25px;
+}
+
+.diagnostic-info{
+    padding:1rem 0;
+    display: flex;
+}
+
+.diagnostic-info img{
+    width: 28px;
+    height: 28px;
+}
+
+.diagnostic-duo{
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.diagnostic-duo img{
+    margin-right: 5px;
+}
+
+.user-dashboard-section{
+    padding-bottom: 2rem;
+}
+
+
+
+
+

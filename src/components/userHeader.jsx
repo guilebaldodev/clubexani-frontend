@@ -18,7 +18,7 @@ const UserHeader = () => {
 <div className="header-info">
 <nav className="navbar user-navbar">
     
-    <Link>
+    <Link to={"/exani-iii"}>
     <img src="/icons/header/home-icon2.png" alt="" />
     Inicio
     </Link>
