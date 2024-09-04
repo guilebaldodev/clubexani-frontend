@@ -9,19 +9,8 @@ const UserDashboard = () => {
         <div className="user-dashboard-container">
             <div className="dashborad-banner">
             </div>
-{/* 
-            <div className="profile-credentials">
-                        <div className="circle-div">
-                            <img src="/icons/user-icon-profile.png" alt="" />
-                        </div>
 
-                        <div className="credentials-text">
-                            <h2>Guilebaldo Vargas Solís</h2>
-                            <p>Aspirante a posgrado en México</p>
-                            <p>Universidad Autónoma de Guerrero</p>
-                        </div>
-            </div> */}
-
+            {/*  */}
             <div className="dashboard-titles">
                 <h2>
                 ¡El primer paso hacia tu posgrado empieza con <span className="primary-color">Club</span>EXANI!
@@ -31,14 +20,16 @@ const UserDashboard = () => {
                 </p>
             </div>
 
+
+            <div className="user-dashboard-columns">
+                
             <div className="user-dashboard-info">
                 <div className="user-dashboard-section">
-                    <h3>Ponte a prueba</h3>
-
+                    <progress value="50" max="100"></progress>
                     <div className="diagnostic-exam-card">
                         <div className="diagnostic-titles">
                             <div className="diagnostic-img">
-                                <img src="" alt="" />
+                                <img src="/icons/rating-svg.svg" alt="" />
                             </div>
                             <p>Examen diagnostico #1</p>
                         </div>
@@ -54,7 +45,8 @@ const UserDashboard = () => {
                             </div>
                         </div>
                         <div className="diagnostic-button">
-                            <button>Comenzar</button>
+                            {/* <img src="/icons/quizzes/play-icon.png" alt="" /> */}
+                            <button>Empezar</button>
                         </div>
                     </div>
 
@@ -127,7 +119,78 @@ const UserDashboard = () => {
                 
                 </div>
                 </div>
+
+                <div className="dashboard-section">
+                    <h3>Herramientas</h3>
+
+                    <div className="tools-container">
+                        <div className="tool-card">
+                            <div className="tool-container">
+                            <div className="tool-img circle-div">
+                                <img src="/icons/writing-icon.svg" alt="" />
+                            </div>
+                            <div className="tool-info">
+                                <p>Simuladores</p>
+                            </div>
+                            </div>
+                            <div className="tool-forward">
+                            <img className="tool-forward" src="/icons/forward-icon.png" alt="" />
+
+                            </div>
+
+                        </div>
+
+                        <div className="tool-card">
+                            <div className="tool-container">
+                            <div className="tool-img circle-div">
+                                <img src="/icons/test-icon-white.png" alt="" />
+                            </div>
+                            <div className="tool-info">
+                                <p>Cuestionarios</p>
+                            </div>
+
+                            </div>
+                            <div className="tool-forward">
+                            <img className="tool-forward" src="/icons/forward-icon.png" alt="" />
+
+                            </div>
+
+                        </div>
+
+                        <div className="tool-card">
+                            <div className="tool-container">
+                            <div className="tool-img circle-div">
+                                <img src="/icons/open-book-white.png" alt="" />
+                            </div>
+                            <div className="tool-info">
+                                <p>Lecciones</p>
+                            </div>
+
+                            </div>
+                            <div className="tool-forward">
+                            <img className="tool-forward" src="/icons/forward-icon.png" alt="" />
+
+                            </div>
+                        </div>
+                        {/* <div className="tool-card">
+                            <div className="tool-img circle-div">
+                                <img src="/icons/header/writing-icon.png" alt="" />
+                            </div>
+                            <div className="tool-info">
+                                <p>Simuladores</p>
+                            </div>
+                        </div> */}
+                    </div>
+
+                    
+
+                </div>
  
+            </div>
+
+            <div className="user-dashboard-progress">
+                <h3>Tu progreso</h3>
+            </div>
             </div>
 
         </div>
