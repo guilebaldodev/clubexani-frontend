@@ -23,9 +23,10 @@
 
 
 .user-dashboard-info{
-    width: 50%;
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
+    /* flex: 0 0 66.666667%; */
+    /* max-width: 66.666667%; */
+    /* width: 100%; */
+    flex-grow: 1;
 }
 
 .user-dashboards-cards{
@@ -216,8 +217,7 @@
 .tool-img img{
     width: 58px;
     height: 58px;
-    color: white !important;
-    opacity: 1 !important;
+
 }
 
 .tool-info{
@@ -246,8 +246,8 @@
 }
 
 .tool-forward img{
-    width: 28px;
-    height: 28px;
+    width: 25px;
+    height: 25px;
     /* height: 0px; */
 }
 
@@ -257,26 +257,68 @@
     display: flex;
     width: 90%;
     margin: auto;
-    gap: 30px;
+    gap: 15px;
 }
 
 .user-dashboard-columns{
     display: flex;
     justify-content: space-around;
     padding-top: 3rem;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
 }
 
 .user-dashboard-progress{
     flex: 0 0 25.333333%;
     max-width: 25.333333%;
+    min-width: 250px;
     /* border: 1px solid #c8ced3; */
     padding: 1.5rem;
-    width: 20rem;
+    /* width: 20rem; */
     border-radius: 14px;
     /* border: 1px solid rgba(0,0,0,.1); */
     box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
     height:fit-content;
+    position: relative;
 }
+
+
+  /* progress-bar */
+  
+
+.user-dashboard-progress h3{
+    margin-bottom: 0.8rem;
+}
+
+.progress-titles{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+.progress-more{
+    right: 0;
+    top: 0;
+    padding: 1rem;
+    padding-top: 1.2rem;
+    position:absolute;
+}
+
+.progress-more a{
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'CircularStd-Bold',sans-serif;
+
+}
+
+  .progress-item-titles{
+      display: flex;
+    padding: 0.5rem 0;
+    justify-content: space-between;
+}
+
+
 
 
 

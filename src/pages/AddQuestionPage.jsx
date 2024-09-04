@@ -3,7 +3,7 @@ const AddQuestionPage = () => {
     return ( 
     <>
     <div className="all-container">
-    <Form></Form>
+    {/* <Form></Form> */}
     </div>
     
     </> );

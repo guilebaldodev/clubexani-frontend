@@ -6,7 +6,7 @@ const LandingPage = () => {
     <>
     <Navbar></Navbar>
     <div className="content-container">
-        <LearningSideBar></LearningSideBar>
+        {/* <LearningSideBar></LearningSideBar> */}
     </div>
     </> );
 }
