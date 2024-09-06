@@ -17,11 +17,11 @@ const UserHeader = () => {
               <img src="/icons/header/home-icon2.png" alt="" />
               Inicio
             </Link>
-            <Link>
+            <Link to={'/simuladores'}> 
               <img src="/icons/header/writing.svg" alt="" />
               Simuladores
             </Link>
-            <Link to={"/lecciones/paradigmas-de-investigacion"}>
+            <Link to={"/lecciones"}>
               <img src="/icons/header/open-book.png" alt="" />
               Lecciones
             </Link>

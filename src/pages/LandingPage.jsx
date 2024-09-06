@@ -1,4 +1,3 @@
-import LearningSideBar from "../components/LearningSideBar";
 import Navbar from "../components/Nabvar";
 
 const LandingPage = () => {
@@ -6,7 +5,7 @@ const LandingPage = () => {
     <>
     <Navbar></Navbar>
     <div className="content-container">
-        {/* <LearningSideBar></LearningSideBar> */}
+        
     </div>
     </> );
 }

@@ -11,6 +11,8 @@ import PasswordPage from './pages/PasswordPage'
 import PricingPage from './pages/PricingPage'
 import QuizzesPage from './pages/QuizPage'
 import UserDashboard from './pages/UserDashboard'
+import LessonsPage from './pages/LessonsPage'
+import ExamSimulators from './pages/ExamSimulators'
 
 function App() {
 
@@ -22,8 +24,10 @@ function App() {
 
       <Route path='/'element={<LandingPage></LandingPage>}></Route>
       <Route path='/exani-iii/'element={<UserDashboard></UserDashboard>}></Route>
+      <Route path='/lecciones'element={<LessonsPage></LessonsPage>}></Route>
       <Route path='/lecciones/:nombre' element={<LessonPage></LessonPage>}></Route>
       <Route path='/cuestionarios/:tema' element={<QuizzesPage></QuizzesPage>}></Route>
+      <Route path='/simuladores'element={<ExamSimulators></ExamSimulators>}></Route>
       
 
       <Route path='/perfil' element={<ProfilePage></ProfilePage>}></Route>

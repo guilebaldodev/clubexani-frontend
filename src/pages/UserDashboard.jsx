@@ -32,7 +32,7 @@ const UserDashboard = () => {
                     <div className="diagnostic-img">
                       <img src="/icons/rating-svg.svg" alt="" />
                     </div>
-                    <p>Examen diagnostico #1</p>
+                    <p>Examen diagnóstico #1</p>
                   </div>
 
                   <div className="diagnostic-info">
@@ -56,7 +56,7 @@ const UserDashboard = () => {
                 <div className="user-dashboards-cards">
                   <div className="user-dashboard-card">
                     <div className="dashboard-card-text">
-                      <p className="title-card">Pensamiento Matematico</p>
+                      <p className="title-card">Pensamiento Matemático</p>
                       <p className="subtitle">18 Lecciones</p>
                     </div>
 
@@ -70,7 +70,7 @@ const UserDashboard = () => {
                   <div className="user-dashboard-card">
                     <div className="dashboard-card-text">
                       <p className="title-card">
-                        Metodologia de la investigacion
+                        Metodología de la investigacion
                       </p>
                       <p style={{ color: "#0056D2" }} className="subtitle">
                         22 Lecciones
@@ -89,7 +89,7 @@ const UserDashboard = () => {
 
                   <div className="user-dashboard-card">
                     <div className="dashboard-card-text">
-                      <p className="title-card">Redaccion indirecta</p>
+                      <p className="title-card">Redacción indirecta</p>
                       <p style={{ color: "#1ABC9C" }} className="subtitle">
                         23 Lecciones
                       </p>
@@ -107,7 +107,7 @@ const UserDashboard = () => {
 
                   <div className="user-dashboard-card">
                     <div className="dashboard-card-text">
-                      <p className="title-card">Compresion lectora</p>
+                      <p className="title-card">Compresión lectora</p>
                       <p style={{ color: "#F3B942" }} className="subtitle">
                         15 Lecciones
                       </p>
@@ -211,14 +211,14 @@ const UserDashboard = () => {
 
                 <div className="progress-item">
                   <div className="progress-item-titles">
-                    <p>Metodologia</p>
+                    <p>Metodología</p>
                     <p>7/22</p>
                   </div>
                   <ProgressBar completed={40} bgColor="#EE4266"></ProgressBar>
                 </div>
                 <div className="progress-item">
                   <div className="progress-item-titles">
-                    <p>Redaccion</p>
+                    <p>Redacción</p>
                     <p>7/140</p>
                   </div>
                   <ProgressBar completed={15} bgColor="#0056D2"></ProgressBar>
