@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import UserHeader from "../components/userHeader";
 import "../css/simulator-exam.css";
 
@@ -47,7 +48,7 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button">
-                <button>Empezar examen</button>
+                <Link to={"/simulador"}>Empezar examen</Link>
               </div>
             </div>
 
@@ -86,7 +87,7 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button">
-                <button>Empezar examen</button>
+                <Link>Empezar examen</Link>
               </div>
             </div>
 
@@ -126,7 +127,7 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button">
-                <button>Empezar examen</button>
+                <Link>Empezar examen</Link>
               </div>
             </div>
 
@@ -165,10 +166,10 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button disabled-button">
-                <button>
+                <Link>
                     <img src="/icons/lock-icon.png" alt="" />
                     Desbloquear simulador
-                    </button>
+                    </Link>
               </div>
             </div>
 
@@ -207,10 +208,10 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button disabled-button">
-                <button>
+                <Link>
                     <img src="/icons/lock-icon.png" alt="" />
                     Desbloquear simulador
-                    </button>
+                    </Link>
               </div>
             </div>
 
@@ -249,10 +250,10 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button disabled-button">
-                <button>
+                <Link>
                     <img src="/icons/lock-icon.png" alt="" />
                     Desbloquear simulador
-                    </button>
+                    </Link>
               </div>
             </div>
             <div className="item">
@@ -289,10 +290,10 @@ const ExamSimulators = () => {
                 </div>
               </div>
               <div className="item-button disabled-button">
-                <button>
+                <Link>
                     <img src="/icons/lock-icon.png" alt="" />
                     Desbloquear simulador
-                    </button>
+                    </Link>
               </div>
             </div>
 
@@ -331,10 +332,10 @@ const ExamSimulators = () => {
               </div>
 
               <div className="item-button disabled-button">
-                <button>
+                <Link>
                     <img src="/icons/lock-icon.png" alt="" />
                     Desbloquear simulador
-                    </button>
+                    </Link>
               </div>
             </div>
 

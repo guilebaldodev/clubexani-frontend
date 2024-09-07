@@ -13,6 +13,8 @@ import QuizzesPage from './pages/QuizPage'
 import UserDashboard from './pages/UserDashboard'
 import LessonsPage from './pages/LessonsPage'
 import ExamSimulators from './pages/ExamSimulators'
+import Simulator from './pages/Simulator'
+import Simulatordos from './pages/Simulator2'
 
 function App() {
 
@@ -28,6 +30,8 @@ function App() {
       <Route path='/lecciones/:nombre' element={<LessonPage></LessonPage>}></Route>
       <Route path='/cuestionarios/:tema' element={<QuizzesPage></QuizzesPage>}></Route>
       <Route path='/simuladores'element={<ExamSimulators></ExamSimulators>}></Route>
+      <Route path='/simulador'element={<Simulator></Simulator>}></Route>
+      <Route path='/simulador/2'element={<Simulatordos></Simulatordos>}></Route>
       
 
       <Route path='/perfil' element={<ProfilePage></ProfilePage>}></Route>

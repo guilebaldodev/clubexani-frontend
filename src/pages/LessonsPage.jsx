@@ -2,6 +2,7 @@ import UserHeader from "../components/userHeader";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 import "../css/lessons-page.css";
+import { Link } from "react-router-dom";
 
 const LessonsPage = () => {
   return (
@@ -38,9 +39,9 @@ const LessonsPage = () => {
 
                 <div className="lesson-item-progress">
                 <ProgressBar bgColor="#0056D2" height="18px" isLabelVisible={false} completed={50}></ProgressBar>
-                  <div className="lesson-play-container">
+                  <Link to={'/lecciones/paradigmas-de-investigacion'} className="lesson-play-container">
                     <img src="/icons/quizzes/play-icon.png" alt="" />
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -66,9 +67,9 @@ const LessonsPage = () => {
 
                 <div className="lesson-item-progress">
                   <ProgressBar bgColor="#0056D2" height="18px" isLabelVisible={false} completed={70}></ProgressBar>
-                  <div className="lesson-play-container">
+                  <Link className="lesson-play-container">
                     <img src="/icons/quizzes/play-icon.png" alt="" />
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,9 +120,9 @@ const LessonsPage = () => {
 
                 <div className="lesson-item-progress">
                 <ProgressBar bgColor="#0056D2" height="18px" isLabelVisible={false} completed={100}></ProgressBar>
-                  <div className="lesson-play-container">
+                  <Link to={'/lecciones/comprension-lectora'} className="lesson-play-container">
                     <img src="/icons/quizzes/play-icon.png" alt="" />
-                  </div>
+                  </Link>
                 </div>
               </div>
             </div>

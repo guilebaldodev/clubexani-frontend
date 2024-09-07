@@ -94,11 +94,12 @@
     padding-bottom: 1rem;
 }
 
-.simulators-container .item-button button{
+.simulators-container .item-button a{
     border: none;
     padding: 0.55rem 1rem;
     font-family: 'CircularStd-Bold', sans-serif;
     color: white;
+    text-decoration: none;
     font-size: 16px;
     border-radius: 5px;
     display: flex;
@@ -111,16 +112,16 @@
     cursor: pointer;
 }
 
-.disabled-button button{
+.disabled-button a{
     background-color: #b3b3b3  !important;
     color: white !important;
     display: flex;
     align-items: center;
 }
 
-.disabled-button button img{
-    width: 19px;
-    height: 19px;
+.disabled-button a img{
+    width: 18px;
+    height: 18px;
     margin-right: 10px;
 }
 
