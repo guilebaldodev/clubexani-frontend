@@ -274,14 +274,14 @@ textarea{
 
 /* sidebar */
 
-
+ 
 .side-bar-container{
   position:sticky;
   top: 0;
   height: 100vh;
   min-width: 270px;
-  /* max-width: 420px; */
   background-color: #131720;
+  background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -292,7 +292,6 @@ textarea{
 .side-bar-title{
   display: flex;
   align-items: center;
-  /* border-bottom:.1px solid #64575737; */
   padding: 1rem;
   
 }
@@ -304,19 +303,17 @@ textarea{
 .side-bar-title h3{
   font-size: 1.1rem;
   margin-left: 10px;
-  /* color: rgb(87, 86, 86); */
   color: rgb(48, 47, 47);
-  color: white;
+  /* color: white; */
 
-  /* font-weight:bold; */
 }
 
+/*
 .side-bar-options{
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
-  /* margin-top: 2rem; */
 }
 
 .side-bar-options a{
@@ -357,7 +354,7 @@ textarea{
 
 
 
-
+ */
 
 
 
