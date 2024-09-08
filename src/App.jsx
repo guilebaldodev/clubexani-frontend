@@ -15,6 +15,8 @@ import LessonsPage from './pages/LessonsPage'
 import ExamSimulators from './pages/ExamSimulators'
 import Simulator from './pages/Simulator'
 import Simulatordos from './pages/Simulator2'
+import RegisterPage from './pages/RegisterPage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
 
@@ -23,6 +25,9 @@ function App() {
       <QuestionProvider>
 
       <Routes>
+
+      <Route path='/registro'  element={<RegisterPage></RegisterPage>}></Route>
+      <Route path='/login'  element={<LoginPage></LoginPage>}></Route>
 
       <Route path='/'element={<LandingPage></LandingPage>}></Route>
       <Route path='/exani-iii/'element={<UserDashboard></UserDashboard>}></Route>
