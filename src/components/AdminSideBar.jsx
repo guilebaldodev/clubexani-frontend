@@ -39,14 +39,17 @@ const SideBar = () => {
 
 
                 <div className="option-menu">
-                    <div className="option-menu-title" onClick={()=>{
+                    <div 
+                      className={`option-menu-title ${activeMenu === 'preguntas' ? 'active option-menu-selected' : ''}`}
+
+                    onClick={()=>{
                         toggleMenu('preguntas')
                     }}>
                         <div className="title-right">
                         <img src="/icons/admin-sidebar/question-icon.png" alt="" />
                         <p>Preguntas</p>
                         </div>
-                        <img src="/icons/admin-sidebar/forward-icon.png" alt="" />
+                        <img className='toggle-icon' src={"/icons/admin-sidebar/forward-icon.png"} alt="" />
                     </div>
 
                     <div className={`content ${activeMenu==="preguntas"?"show":""}`}>
@@ -64,14 +67,17 @@ const SideBar = () => {
 
                 </div>
                 <div className="option-menu">
-                    <div className="option-menu-title"  onClick={()=>{
+                <div 
+                      className={`option-menu-title ${activeMenu === 'lecciones' ? 'active option-menu-selected' : ''}`}
+
+                    onClick={()=>{
                         toggleMenu('lecciones')
                     }}>
                         <div className="title-right">
                         <img src="/icons/admin-sidebar/open-book.png" alt="" />
                         <p>Lecciones</p>
                         </div>
-                        <img src="/icons/admin-sidebar/forward-icon.png" alt="" />
+                        <img className='toggle-icon' src="/icons/admin-sidebar/forward-icon.png" alt="" />
                     </div>
 
                     <div className={`content ${activeMenu==="lecciones"?"show":""}`}>
@@ -90,14 +96,18 @@ const SideBar = () => {
                 </div>
       
                 <div className="option-menu">
-                    <div className="option-menu-title" onClick={()=>{
+                    <div 
+                                          className={`option-menu-title ${activeMenu === 'simuladores' ? 'active option-menu-selected' : ''}`}
+                    
+                    onClick={()=>{
+                    
                         toggleMenu('simuladores')
                     }}>
                         <div className="title-right">
                         <img src="/icons/admin-sidebar/writing-icon.svg" alt="" />
                         <p>Simuladores</p>
                         </div>
-                        <img src="/icons/admin-sidebar/forward-icon.png" alt="" />
+                        <img className='toggle-icon' src="/icons/admin-sidebar/forward-icon.png" alt="" />
                     </div>
 
                     <div className={`content ${activeMenu==="simuladores"?"show":""}`}>
@@ -116,14 +126,17 @@ const SideBar = () => {
                 </div>
 
                 <div className="option-menu">
-                    <div className="option-menu-title" onClick={()=>{
+                    <div 
+                        className={`option-menu-title ${activeMenu === 'cuestionarios' ? 'active option-menu-selected' : ''}`}
+                    
+                    onClick={()=>{
                         toggleMenu('cuestionarios')
                     }}>
                         <div className="title-right">
                         <img src="/icons/admin-sidebar/test.png" alt="" />
                         <p>Cuestionarios</p>
                         </div>
-                        <img src="/icons/admin-sidebar/forward-icon.png" alt="" />
+                        <img className='toggle-icon' src="/icons/admin-sidebar/forward-icon.png" alt="" />
                     </div>
 
                     <div className={`content ${activeMenu==="cuestionarios"?"show":""}`}>

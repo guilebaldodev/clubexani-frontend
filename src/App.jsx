@@ -17,6 +17,7 @@ import Simulator from './pages/Simulator'
 import Simulatordos from './pages/Simulator2'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
+import QuestionPage from './pages/QuestionPage'
 
 function App() {
 
@@ -45,8 +46,8 @@ function App() {
       
 
       <Route path='/panel-control' element={<SideBar></SideBar>}>
+      <Route path='preguntas' element={<QuestionPage></QuestionPage>}></Route>
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
-      <Route path='preguntas' element={<QuestionTable></QuestionTable>}></Route>
 
       </Route>
 

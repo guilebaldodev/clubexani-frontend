@@ -363,8 +363,7 @@ textarea{
 
 .super-container{
   display: flex;
-  justify-content: center;
-  background-color: #afb9b628;
+  /* background-color: #afb9b628; */
   width: 100%;
 }
 
@@ -1090,3 +1089,15 @@ ol li{
 .grey-tr{
   background-color: rgb(246, 247, 249) !important;
 }
+
+
+.outlet{
+  flex-grow: 1;
+  background-color: #F3F3F9;
+  background-color: #EFF3F9;
+}
+
+.navbar-credentials p{
+  color: rgb(122, 122, 122);
+}
+
