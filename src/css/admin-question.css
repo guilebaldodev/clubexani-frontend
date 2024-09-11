@@ -153,7 +153,7 @@
 }
 
 .admin-table table thead tr th{
-    padding: 10px 14px;
+    padding: 12px 14px;
     text-align: left;
     border: inherit;
 }
@@ -292,3 +292,116 @@
 .admin-filters-footer button{
     padding: 0.5rem 2rem;
 }
+
+
+
+.color-td span{
+    font-size: 14px;
+    color: white;
+    padding: 6px 8px;
+    border-radius:4px ;
+
+}
+
+.color-td.green span{
+    background-color: #E3F4E9;
+    color: #6ac75a;
+}
+
+.color-td.red span{
+    background-color: #FFE9E3;
+    color: #ff6d43 ;
+}
+
+.color-td.grey span{
+    background-color: #ececec ;
+    color: #A0A0A0;
+}
+
+.color-td.gold span{
+    background-color:#FFF5CC  ;
+    color:#FFA500  ;
+}
+
+.color-td.blue span{
+    background-color: #DAE1F7;
+    color: #6388ff;
+}
+
+
+td div{
+    /* background-color: #f0f0f0; */
+    /* height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; */
+}
+
+td div img{
+    width: 19px;
+}
+
+.th-center{
+    text-align: center !important;
+}
+
+.td-center{
+    text-align: center !important;
+    width: 30px ;
+}
+
+
+.td-center{
+    /* display: flex; */
+    align-items: center !important;
+    justify-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+}
+
+.admin-table .container{
+    position: relative;
+}
+
+.admin-table .container .menu{
+    /* position: absolute; */
+    /* border: 1px solid #ddd; */
+    /* z-index: 2; */
+    /* top: 100%;  */
+    /* display: flex; */
+    /* flex-direction: column; */
+    
+    z-index: 100;
+    position: absolute;
+    inset: 0px 0px auto auto;
+    transform: translate3d(6px,15px, 0px);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    box-shadow: 0 0.25rem 1rem rgba(165, 163, 174, 0.45);
+}
+
+.admin-table .container .menu a{
+    background-color: #fff;
+    z-index: 500;
+     text-decoration: none;
+     color: #383853;
+     font-size: 15px;
+     padding: 12px 15px;
+     border-top: 1px solid #ebeaea;
+     text-align: left;
+}
+
+.admin-table  .container .menu a:hover{
+    background-color: #e7e6e6;
+}
+
+
+ .admin-table .container .menu.none{
+    display: none;
+}
+

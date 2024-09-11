@@ -59,7 +59,7 @@ const SideBar = () => {
                         <p>Lista</p>
                     </Link>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/añadir-pregunta">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Añadir pregunta</p>
                     </Link>
@@ -82,12 +82,12 @@ const SideBar = () => {
 
                     <div className={`content ${activeMenu==="lecciones"?"show":""}`}>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/lecciones">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Lista</p>
                     </Link>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/añadir-leccion">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Añadir leccion</p>
                     </Link>
@@ -112,12 +112,12 @@ const SideBar = () => {
 
                     <div className={`content ${activeMenu==="simuladores"?"show":""}`}>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/simuladores">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Lista</p>
                     </Link>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/añadir-simulador">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Construir simulador</p>
                     </Link>
@@ -141,12 +141,12 @@ const SideBar = () => {
 
                     <div className={`content ${activeMenu==="cuestionarios"?"show":""}`}>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/cuestionarios">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Lista</p>
                     </Link>
 
-                    <Link to="/panel-control/preguntas">
+                    <Link to="/panel-control/añadir-cuestionario">
                         <img src="/icons/admin-sidebar/round-icon.png" alt="" />
                         <p>Construir cuestionario</p>
                     </Link>
@@ -154,7 +154,7 @@ const SideBar = () => {
 
                 </div>
 
-                <Link to="/panel-control/preguntas">
+                <Link to="/panel-control/usuarios">
                     <img src="/icons/admin-sidebar/user-icon.png" alt="" />
                     <p>Usuarios</p>
                 </Link>

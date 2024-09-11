@@ -2,9 +2,12 @@ import { useState } from "react";
 import AdminHeader from "../components/AdminHeader";
 import "../css/admin-question.css";
 import Select from "react-select";
+import { Link } from "react-router-dom";
 
-const QuestionPage = () => {
+const AdminLessonsPage = () => {
   const [filters, setFilters] = useState(false);
+
+  const [menu, setmenu] = useState(false);
 
   return (
     <>
@@ -12,24 +15,24 @@ const QuestionPage = () => {
         <AdminHeader></AdminHeader>
         <div className="admin-question-container">
           <div className="admin-question-title">
-            <h2>Lista de preguntas</h2>
+            <h2>Lista de lecciones</h2>
           </div>
 
           <div className="admin-question-cards">
             <div className="admin-question-card">
               <div className="question-text">
-                <p>Total de preguntas</p>
-                <h4>520</h4>
+                <p>Total de lecciones</p>
+                <h4>120</h4>
               </div>
               <div className="admin-question-img">
                 <div className="question-img">
-                  <img src="/icons/admin-icons/question.png" alt="" />
+                  <img src="/icons/admin-icons/open-book-blue.png" alt="" />
                 </div>
               </div>
             </div>
             <div className="admin-question-card">
               <div className="question-text">
-                <p>Preguntas este mes</p>
+                <p>Lecciones este mes</p>
                 <h4>30</h4>
               </div>
               <div className="admin-question-img">
@@ -40,12 +43,12 @@ const QuestionPage = () => {
             </div>
             <div className="admin-question-card">
               <div className="question-text">
-                <p>Preguntas asignadas</p>
-                <h4>350</h4>
+                <p>Completados mejor leccion</p>
+                <h4>3500</h4>
               </div>
               <div className="admin-question-img">
                 <div className="question-img">
-                  <img src="/icons/admin-icons/pointer.png" alt="" />
+                  <img src="/icons/admin-icons/best-icon.png" alt="" />
                 </div>
               </div>
             </div>
@@ -93,38 +96,53 @@ const QuestionPage = () => {
                   <tr>
                     <th>Id</th>
                     <th>Tema</th>
-                    <th>Tipo</th>
-                    <th>Origen</th>
                     <th>Categoria</th>
-                    <th>Asignado</th>
-                    <th className="th-center"></th>
+                    <th>Autor</th>
+                    <th>Tipo</th>
+                    <th className="th-center">Completados</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo aplicada los ?</td>
-                    <td>Html</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td red">
-                      <span>Pendiente</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td grey">
+                      <span>Gratis</span>
                     </td>
+                    <td className="td-center">1050</td>
                     <td className="td-center">
                       <div className="container">
-                        <img src="/icons/admin-icons/3points.png" alt="" />
+                        <img
+                          onClick={() => {
+                            setmenu(!menu);
+                          }}
+                          src="/icons/admin-icons/3points.png"
+                          alt=""
+                        />
+
+                        <div className={`menu ${menu ? "" : "none"}`}>
+                          <Link>Eliminar</Link>
+                          <Link>Editar</Link>
+                          <Link>Ver</Link>
+                          <Link>Añadir a examen</Link>
+                          <Link>Añadir a cuestionario</Link>
+                        </div>
                       </div>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td green">
-                      <span>Asignada</span>
+                    <td>Guilebaldo</td>
+
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -134,12 +152,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>3</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>html</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td green">
-                      <span>Asignada</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">1050</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -149,12 +167,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Generada</td>
                     <td>Metodologia</td>
-                    <td className="color-td green">
-                      <span>Asignada</span>
+                    <td>Alexa</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center"> 450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -164,12 +182,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Generada</td>
                     <td>Metodologia</td>
-                    <td className="color-td green">
-                      <span>Asignada</span>
+                    <td>Alexa</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -179,12 +197,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Generada</td>
                     <td>Metodologia</td>
-                    <td className="color-td green">
-                      <span>Asignada</span>
+                    <td>Alexa</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -194,12 +212,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td red">
-                      <span>Pendiente</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -209,12 +227,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td red">
-                      <span>Pendiente</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -224,12 +242,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td red">
-                      <span>Pendiente</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -239,12 +257,12 @@ const QuestionPage = () => {
                   <tr>
                     <td>1</td>
                     <td>¿Que es el positivismo?</td>
-                    <td>Texto</td>
-                    <td>Examen</td>
                     <td>Metodologia</td>
-                    <td className="color-td red">
-                      <span>Pendiente</span>
+                    <td>Guilebaldo</td>
+                    <td className="color-td gold">
+                      <span>Premium</span>
                     </td>
+                    <td className="td-center">450</td>
                     <td>
                       <div className="container">
                         <img src="/icons/admin-icons/3points.png" alt="" />
@@ -329,4 +347,4 @@ const QuestionPage = () => {
   );
 };
 
-export default QuestionPage;
+export default AdminLessonsPage;

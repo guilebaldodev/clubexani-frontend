@@ -18,6 +18,8 @@ import Simulatordos from './pages/Simulator2'
 import RegisterPage from './pages/RegisterPage'
 import LoginPage from './pages/LoginPage'
 import QuestionPage from './pages/QuestionPage'
+import AdminLessonsPage from './pages/AdminLessonsPage'
+import AdminSimulatorsPage from './pages/AdminSimulatorPage'
 
 function App() {
 
@@ -47,6 +49,8 @@ function App() {
 
       <Route path='/panel-control' element={<SideBar></SideBar>}>
       <Route path='preguntas' element={<QuestionPage></QuestionPage>}></Route>
+      <Route path='lecciones' element={<AdminLessonsPage></AdminLessonsPage>}></Route>
+      <Route path='simuladores' element={<AdminSimulatorsPage></AdminSimulatorsPage>}></Route>
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
 
       </Route>
