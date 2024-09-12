@@ -18,35 +18,47 @@ const AdminSimulatorsPage = () => {
           <AdminHeader></AdminHeader>
           <div className="admin-question-container">
             <div className="admin-question-title">
-              <h2>Lista de lecciones</h2>
+              <h2>Lista de simuladores</h2>
             </div>
   
             <div className="admin-question-cards">
-              <div className="admin-question-card">
+            <div className="admin-question-card">
                 <div className="question-text">
-                  <p>Total de lecciones</p>
-                  <h4>120</h4>
+                  <p>Simuladores</p>
+                  <h4>6</h4>
                 </div>
                 <div className="admin-question-img">
                   <div className="question-img">
-                    <img src="/icons/admin-icons/open-book-blue.png" alt="" />
+                    <img className="fill-blue" src="/icons/admin-icons/writing-icon.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+             
+              <div className="admin-question-card">
+                <div className="question-text">
+                  <p>Preguntas en simuladores</p>
+                  <h4>450</h4>
+                </div>
+                <div className="admin-question-img">
+                  <div className="question-img">
+                    <img src="/icons/admin-icons/question.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="admin-question-card">
                 <div className="question-text">
-                  <p>Lecciones este mes</p>
-                  <h4>30</h4>
+                  <p>Total de horas en simuladores</p>
+                  <h4>18</h4>
                 </div>
                 <div className="admin-question-img">
                   <div className="question-img">
-                    <img src="/icons/admin-icons/calendar.png" alt="" />
+                    <img src="/icons/admin-icons/time.png" alt="" />
                   </div>
                 </div>
               </div>
               <div className="admin-question-card">
                 <div className="question-text">
-                  <p>Completados mejor leccion</p>
+                  <p>Total de simulaciones completados</p>
                   <h4>3500</h4>
                 </div>
                 <div className="admin-question-img">
@@ -55,17 +67,7 @@ const AdminSimulatorsPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="admin-question-card">
-                <div className="question-text">
-                  <p>Categorias</p>
-                  <h4>4</h4>
-                </div>
-                <div className="admin-question-img">
-                  <div className="question-img">
-                    <img src="/icons/admin-icons/category.png" alt="" />
-                  </div>
-                </div>
-              </div>
+
             </div>
             <div className="admin-table-container">
               <div className="admin-table-header">

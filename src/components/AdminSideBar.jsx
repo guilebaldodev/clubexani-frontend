@@ -160,6 +160,13 @@ const SideBar = () => {
                 </Link>
 
 
+                <Link to="/panel-control/subscripciones">
+                    <img src="/icons/admin-sidebar/money-icon.png" alt="" />
+                    <p>Subscripciones</p>
+                </Link>
+
+
+
 
         
             </div>

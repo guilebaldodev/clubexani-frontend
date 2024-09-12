@@ -20,6 +20,9 @@ import LoginPage from './pages/LoginPage'
 import QuestionPage from './pages/QuestionPage'
 import AdminLessonsPage from './pages/AdminLessonsPage'
 import AdminSimulatorsPage from './pages/AdminSimulatorPage'
+import AdminQuizzesPage from './pages/AdminQuizzesPage'
+import AdminUsersPage from './pages/AdminUsersPage'
+import AdminSubscriptionsPage from './pages/AdminSubscriptionsPage'
 
 function App() {
 
@@ -48,9 +51,14 @@ function App() {
       
 
       <Route path='/panel-control' element={<SideBar></SideBar>}>
+      
       <Route path='preguntas' element={<QuestionPage></QuestionPage>}></Route>
       <Route path='lecciones' element={<AdminLessonsPage></AdminLessonsPage>}></Route>
       <Route path='simuladores' element={<AdminSimulatorsPage></AdminSimulatorsPage>}></Route>
+      <Route path='cuestionarios' element={<AdminQuizzesPage></AdminQuizzesPage>}></Route>
+      <Route path='usuarios' element={<AdminUsersPage></AdminUsersPage>}></Route>
+      <Route path='subscripciones' element={<AdminSubscriptionsPage></AdminSubscriptionsPage>}></Route>
+
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
 
       </Route>
