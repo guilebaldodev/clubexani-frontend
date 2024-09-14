@@ -32,7 +32,7 @@ const SideBar = () => {
             </div>
         </div>
             <div className="sidebar-options">
-                <Link to="/panel-control/preguntas">
+                <Link to="/panel-control/ventas">
                     <img src="/icons/admin-sidebar/home-icon.png" alt="" />
                     <p>Dashboard</p>
                 </Link>

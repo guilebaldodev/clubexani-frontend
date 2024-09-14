@@ -23,6 +23,7 @@ import AdminSimulatorsPage from './pages/AdminSimulatorPage'
 import AdminQuizzesPage from './pages/AdminQuizzesPage'
 import AdminUsersPage from './pages/AdminUsersPage'
 import AdminSubscriptionsPage from './pages/AdminSubscriptionsPage'
+import SalesDashboard from './pages/SalesDashboard'
 
 function App() {
 
@@ -58,6 +59,8 @@ function App() {
       <Route path='cuestionarios' element={<AdminQuizzesPage></AdminQuizzesPage>}></Route>
       <Route path='usuarios' element={<AdminUsersPage></AdminUsersPage>}></Route>
       <Route path='subscripciones' element={<AdminSubscriptionsPage></AdminSubscriptionsPage>}></Route>
+
+      <Route path='ventas' element={<SalesDashboard></SalesDashboard>}></Route>
 
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
 
