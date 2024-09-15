@@ -32,11 +32,38 @@ const SideBar = () => {
             </div>
         </div>
             <div className="sidebar-options">
-                <Link to="/panel-control/ventas">
-                    <img src="/icons/admin-sidebar/home-icon.png" alt="" />
-                    <p>Dashboard</p>
-                </Link>
+                <div className="option-menu">
+                    <div 
+                      className={`option-menu-title ${activeMenu === 'dashboards' ? 'active option-menu-selected' : ''}`}
 
+                    onClick={()=>{
+                        toggleMenu('dashboards')
+                    }}>
+                        <div className="title-right">
+                        <img src="/icons/admin-sidebar/home-icon.png" alt="" />
+
+                        <p>Dashboards</p>
+                        </div>
+                        <img className='toggle-icon' src={"/icons/admin-sidebar/forward-icon.png"} alt="" />
+                    </div>
+
+                    <div className={`content ${activeMenu==="dashboards"?"show":""}`}>
+
+                    <Link to="/panel-control/ventas">
+                        <img src="/icons/admin-sidebar/round-icon.png" alt="" />
+                        <p>Ventas</p>
+                    </Link>
+
+                    <Link to="/panel-control/contenido">
+                        <img src="/icons/admin-sidebar/round-icon.png" alt="" />
+                        <p>Contenido</p>
+                    </Link>
+
+      
+
+                    </div>
+
+                </div>
 
                 <div className="option-menu">
                     <div 

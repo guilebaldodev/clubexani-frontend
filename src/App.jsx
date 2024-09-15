@@ -24,6 +24,7 @@ import AdminQuizzesPage from './pages/AdminQuizzesPage'
 import AdminUsersPage from './pages/AdminUsersPage'
 import AdminSubscriptionsPage from './pages/AdminSubscriptionsPage'
 import SalesDashboard from './pages/SalesDashboard'
+import ContentDashboard from './pages/ContentDashboard'
 
 function App() {
 
@@ -61,6 +62,7 @@ function App() {
       <Route path='subscripciones' element={<AdminSubscriptionsPage></AdminSubscriptionsPage>}></Route>
 
       <Route path='ventas' element={<SalesDashboard></SalesDashboard>}></Route>
+      <Route path='contenido' element={<ContentDashboard></ContentDashboard>}></Route>
 
       <Route path='agregar-pregunta' element={<Form></Form>}></Route>
 

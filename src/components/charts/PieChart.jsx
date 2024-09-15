@@ -23,19 +23,7 @@ const PieChart = () => {
       },
 
     },
-    // responsive: [
-    //   {
-    //     breakpoint: 480,
-    //     options: {
-    //       chart: {
-    //         width: '100%',
-    //       },
-    //       legend: {
-    //         position: 'bottom',
-    //       },
-    //     },
-    //   },
-    // ],
+ 
   };
 
   const series = [44, 55, 13]; // Datos de ejemplo

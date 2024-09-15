@@ -60,11 +60,12 @@ const series = [
   ];
   
       
-
-
-
 return (
+
+
     <ReactApexChart options={options} series={series} type="line" height={'300'} />
+
+
 );
 
       
