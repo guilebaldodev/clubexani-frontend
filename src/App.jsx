@@ -25,6 +25,7 @@ import AdminUsersPage from './pages/AdminUsersPage'
 import AdminSubscriptionsPage from './pages/AdminSubscriptionsPage'
 import SalesDashboard from './pages/SalesDashboard'
 import ContentDashboard from './pages/ContentDashboard'
+import UserProgressDashboard from './components/UserDashboard'
 
 function App() {
 
@@ -47,6 +48,7 @@ function App() {
       <Route path='/simulador/2'element={<Simulatordos></Simulatordos>}></Route>
       
 
+      <Route path='progreso' element={<UserProgressDashboard></UserProgressDashboard>}></Route>
       <Route path='/perfil' element={<ProfilePage></ProfilePage>}></Route>
       <Route path='/planes' element={<PricingPage></PricingPage>}></Route>
       <Route path='/contraseña' element={<PasswordPage></PasswordPage>}></Route>
