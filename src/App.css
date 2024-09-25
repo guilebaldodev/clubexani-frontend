@@ -668,8 +668,8 @@ input[type="checkbox"]{
 
 .header{
   display: flex;
-  height: 64px;
-  border-bottom: 1px solid rgba(0,0,0,.12);
+  height: 74px;
+  /* border-bottom: 1px solid rgba(0,0,0,.12); */
   justify-content: space-between;
   font-family: 'CircularStd-Bold',sans-serif;
 }
@@ -685,6 +685,10 @@ input[type="checkbox"]{
   margin-left: 25px;
 }
 
+.logotype h2{
+  font-size: 30px;
+}
+
 .navbar{
   display: flex;
   align-items: center;
@@ -694,7 +698,7 @@ input[type="checkbox"]{
   text-decoration: none;
   padding: 0 9px;
   color: black;
-  font-size: 16.6px;
+  font-size: 18px;
 }
 
 
@@ -718,6 +722,7 @@ input[type="checkbox"]{
   border-radius: 0.5rem;
   border-radius: 6px;
   font-family: 'CircularStd-Bold',sans-serif;
+  font-size: 14px;
 }
 
 

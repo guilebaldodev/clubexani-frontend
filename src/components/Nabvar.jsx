@@ -6,7 +6,7 @@ const Navbar = () => {
         <header className="header">
 
             <div className="logotype">
-                <img src="./logo2.png" alt="" />
+                <img src="./icons/logo2.png" alt="" />
                 <h2>
                     <span className='primary-color'>
                     Club 
@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
 
             <nav className="navbar">
-                <Link className='primary-color'>Inicio</Link>
+                <Link>Curso</Link>
                 <Link>Planes</Link>
                 <Link>Testimonios</Link>
                 <Link>Nosotros</Link>

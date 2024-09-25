@@ -48,7 +48,7 @@ function App() {
       <Route path='/simulador/2'element={<Simulatordos></Simulatordos>}></Route>
       
 
-      <Route path='progreso' element={<UserProgressDashboard></UserProgressDashboard>}></Route>
+      <Route path='/progreso' element={<UserProgressDashboard></UserProgressDashboard>}></Route>
       <Route path='/perfil' element={<ProfilePage></ProfilePage>}></Route>
       <Route path='/planes' element={<PricingPage></PricingPage>}></Route>
       <Route path='/contraseña' element={<PasswordPage></PasswordPage>}></Route>

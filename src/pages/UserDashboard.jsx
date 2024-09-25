@@ -189,7 +189,7 @@ const UserDashboard = () => {
             <div className="user-dashboard-progress">
               <h3>Tu progreso</h3>
                 <div className="progress-more">
-                    <Link>
+                    <Link to={'/progreso'}>
                     Ver más</Link>
                 </div>
 

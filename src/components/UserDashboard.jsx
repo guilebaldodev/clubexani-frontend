@@ -221,7 +221,7 @@ const UserProgressDashboard = () => {
 
             <div className="progress-donut-container">
             <div className="progress-horizontal-titles">
-                    <h3>Resultado</h3>
+                    <h3>Aciertos</h3>
                     <p>Basado en los ultimos 5 simuladores</p>
             </div>
 

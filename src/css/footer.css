@@ -1,0 +1,51 @@
+.footer{
+    font-family: 'CircularStd-Book',sans-serif;
+    background-color: #24293B;
+    padding: 3rem 0 2rem;
+}
+
+.footer-content{
+    width: 90%;
+    margin: auto;
+    justify-content:space-evenly;
+    display: flex;
+    color: white;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section h4{
+    font-size: 18px;
+    padding-bottom: 1rem;
+}
+
+
+.footer-section ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+.footer-section ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li{
+    padding: 0.4rem 0;
+}
+
+.footer-logotype{
+    font-size: 26px;
+    display: flex;
+}
+
+.footer-logotype img{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+}
