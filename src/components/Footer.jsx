@@ -16,9 +16,6 @@ const Footer = () => {
                 <h4>Nosotros</h4>
 
                 <ul>
-                    <li>
-                        <Link to={""}>Politicas</Link>
-                    </li>
                         <li>
                         <Link to={""}>Contacto</Link>
 
@@ -30,6 +27,9 @@ const Footer = () => {
                         <li>
 
                         <Link to={""}>Planes</Link>
+                        </li>
+                        <li>
+                        <Link to={""}>Politicas</Link>
                         </li>
                 </ul>
             </div>
@@ -41,16 +41,16 @@ const Footer = () => {
 
                 <ul>
                     <li>
-                        <Link to={""}>Contacto</Link>
+                        <Link to={""}>Lecciones</Link>
                     </li>
                     <li>
-                        <Link to={""}>Testimonios</Link>
+                        <Link to={""}>Simuladores</Link>
                     </li>
                     <li>
-                        <Link to={""}>Planes</Link>
+                        <Link to={""}>Cuestionarios</Link>
                     </li>
                     <li>
-                        <Link to={""}>Politicas</Link>
+                        <Link to={""}>Mi progreso</Link>
                     </li>
                 </ul>
             </div>
@@ -74,6 +74,16 @@ const Footer = () => {
             </div>
 
             </div>
+
+                <div className="footer-info">
+                    <p>
+                    Copyright © 2024 ClubExani. Todos los derechos reservados.
+                    </p>
+
+                    <p>Web hecha con el ♥ por Solaria</p>
+                </div>
+
+
         </footer>
     
     </> );
