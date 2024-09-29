@@ -215,7 +215,7 @@ const LandingPage = () => {
                 <div className="testimonial-texts">
                     <div className="testimonial-title">
                     <h4>Esteban de Jesus</h4>
-                    <p>Estudiante de posgrado en Matematicas, UAGro.</p>
+                    <p>Estudiante de posgrado en Matematicas</p>
                     </div>
                     <p>
                     <q>
@@ -237,7 +237,7 @@ const LandingPage = () => {
                 <div className="testimonial-texts">
                     <div className="testimonial-title">
                     <h4>Esteban de Jesus</h4>
-                    <p>Estudiante de posgrado en Física, ITESM</p>
+                    <p>Estudiante de posgrado en Física</p>
                     </div>
                     <p>
                     <q>

@@ -26,6 +26,7 @@ import AdminSubscriptionsPage from './pages/AdminSubscriptionsPage'
 import SalesDashboard from './pages/SalesDashboard'
 import ContentDashboard from './pages/ContentDashboard'
 import UserProgressDashboard from './components/UserDashboard'
+import TestimonialsPage from './pages/TestimonialsPage'
 
 function App() {
 
@@ -39,6 +40,9 @@ function App() {
       <Route path='/login'  element={<LoginPage></LoginPage>}></Route>
 
       <Route path='/'element={<LandingPage></LandingPage>}></Route>
+      <Route path='/testimonios' element={<TestimonialsPage></TestimonialsPage>}></Route>
+      
+      
       <Route path='/exani-iii/'element={<UserDashboard></UserDashboard>}></Route>
       <Route path='/lecciones'element={<LessonsPage></LessonsPage>}></Route>
       <Route path='/lecciones/:nombre' element={<LessonPage></LessonPage>}></Route>

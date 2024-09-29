@@ -1,11 +1,14 @@
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 
 const Navbar = () => {
+    const navigate=useNavigate()
     return ( 
         <>
         <header className="header">
 
-            <div className="logotype">
+            <div className="logotype" onClick={()=>{
+                navigate("/")
+            }}>
                 <img src="./icons/logo2.png" alt="" />
                 <h2>
                     <span className='primary-color'>
@@ -18,9 +21,9 @@ const Navbar = () => {
 
             <nav className="navbar">
                 <Link>Planes</Link>
-                <Link>Testimonios</Link>
-                <Link>Nosotros</Link>
-                <Link>Contacto</Link>
+                <Link to={"/testimonios"}>Testimonios</Link>
+                <Link to={"/nosotros"}>Nosotros</Link>
+                <Link to={"/contacto"}>Contacto</Link>
             </nav>
 
             <div className="navbar-button">
