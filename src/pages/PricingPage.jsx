@@ -1,3 +1,5 @@
+import Footer from "../components/Footer";
+import Navbar from "../components/Nabvar";
 import UserHeader from "../components/userHeader";
 import '../css/plans-page.css'
 
@@ -6,7 +8,8 @@ const PricingPage = () => {
     return ( 
         <>
     <div className="colum-container">
-        <UserHeader></UserHeader>
+
+        <Navbar></Navbar>
 
         <div className="pricing-page-container">
             <div className="pricing-page-titles">
@@ -160,6 +163,7 @@ const PricingPage = () => {
                 </div>
             </div>
         </div>
+    <Footer></Footer>
     </div>
 </>
 

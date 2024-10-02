@@ -8,8 +8,10 @@
 }
 
 .testimonials-titles h2{
-    font-size: 40px;
+    font-size: 38px;
     text-align: center;
+    font-family: 'CircularStd-Bold',sans-serif;
+    padding-top: 1rem;
 }
 
 .testimonials-titles p{
@@ -19,7 +21,7 @@
     text-align: center;
     width: 80%;
     margin: auto;
-    font-family: 'CircularStd-Bold',sans-serif;
+    font-family: 'CircularStd-Book',sans-serif;
 
 }
 

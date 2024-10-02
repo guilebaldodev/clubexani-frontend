@@ -1,24 +1,25 @@
 .pricing-page-container{
     margin-top: 64px;
     font-family: 'CircularStd-Book',sans-serif;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 .pricing-page-titles{
     text-align: center;
     width: 40%;
     margin: auto;
-    margin-top: 2rem;
 }
 
 .pricing-page-titles h3{
     font-weight: 600;
     color: rgb(10, 12, 15);
     color: black;
+    font-size: 38px;
 }
 
 .pricing-page-titles p{
     padding: 1rem 0;
+    font-size: 20px;
 }
 
 .pricing-plans-container{
