@@ -18,7 +18,6 @@ const TestimonialsPage = () => {
                 Descubre cómo nuestra plataforma ha sido clave para que muchos estudiantes superen con éxito el EXANI III. Aquí encontrarás algunos ejemplos reales de quienes han utilizado nuestras herramientas y recursos para optimizar su preparación y obtener los mejores resultados en el examen. </p>
             </div>
 
-
             </div>
 
             </div>
