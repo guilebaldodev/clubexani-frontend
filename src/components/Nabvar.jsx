@@ -27,7 +27,9 @@ const Navbar = () => {
             </nav>
 
             <div className="navbar-button">
-                    <button>Ir al Curso</button>
+                    <button onClick={()=>{
+                        navigate('/exani-iii')
+                    }}>Ir al Curso</button>
             </div>
 
             
